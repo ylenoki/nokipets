@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff6fb;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.pet-card {
+  background: #ffffff;
+  border: 2px solid #ffc4e1;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pet-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pet-name {
+  color: #cc3366;
+  margin: 10px 0 5px;
+}
+
+.pet-breed {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.gender-select {
+  margin-bottom: 20px;
+}
+
+#traits-container {
+  background: #fdf6f8;
+  border: 1px solid #ffc4e1;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#traits-container h3 {
+  margin-top: 0;
+  color: #cc3366;
+}
+
+.adopt-section {
+  background: #ffe3f1;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.adopt-section p {
+  margin: 0 0 10px;
+}
+
+.adopt-section button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.adopt-section button:hover {
+  background-color: #c2185b;
+}
