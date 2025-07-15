@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adopt a Virtual Pet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Banner -->
+  <header class="bg-cover bg-center h-48" style="background-image: url('banner.jpg');">
+    <div class="h-full bg-black/50 flex items-center justify-center">
+      <h1 class="text-4xl text-white font-bold">Noki Pets</h1>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="p-6 max-w-3xl mx-auto">
+    <!-- Adoption Section -->
+    <div id="adoptionSection">
+      <h2 class="text-xl font-semibold mb-4">Choose Your Pet</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div onclick="adoptDog('Pomeranian', 'pom1.png')" class="cursor-pointer p-2 border rounded hover:bg-gray-200 text-center">
+          <img src="pom1.png" alt="Pomeranian" class="mx-auto w-24 h-24 object-cover rounded" />
+          <p>Pomeranian</p>
+        </div>
+        <div onclick="adoptCat('Siamese', 'cat2.png')" class="cursor-pointer p-2 border rounded hover:bg-gray-200 text-center">
+          <img src="cat2.png" alt="Siamese" class="mx-auto w-24 h-24 object-cover rounded" />
+          <p>Siamese</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="petDashboard" class="hidden mt-6 text-center">
+      <h2 class="text-2xl font-bold mb-2" id="petNameDisplay"></h2>
+      <img id="petImage" src="" class="mx-auto w-40 h-40 object-cover rounded mb-4 shadow" />
+      <div class="space-x-2 mb-4">
+        <button onclick="feed()" class="bg-green-500 text-white px-4 py-1 rounded">Feed</button>
+        <button onclick="play()" class="bg-blue-500 text-white px-4 py-1 rounded">Play</button>
+        <button onclick="groom()" class="bg-yellow-500 text-white px-4 py-1 rounded">Groom</button>
+      </div>
+      <div class="text-left inline-block text-sm">
+        <p>🍗 Hunger: <span id="hunger">50</span></p>
+        <p>🎉 Happiness: <span id="happiness">50</span></p>
+        <p>🧼 Cleanliness: <span id="cleanliness">50</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center text-sm py-4 text-gray-500">
+    Home · About · Contact · Terms
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
