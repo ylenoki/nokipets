@@ -2,18 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NokiPets - Adopt a Pet</title>
+  <title>NokiPets - Choose Your Puppy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="pet-card">
-    <img src="orange-cat.png" alt="Orange Cat" class="pet-image">
-    <h1 class="pet-name">Orange Cat</h1>
-    <p class="pet-breed">Orange Cat Cat</p>
+  <h1>Welcome to NokiPets</h1>
+  <p>Select your favorite puppy and discover their unique traits!</p>
 
-    <!-- Gender Selection -->
-    <div class="gender-select">
-      <label>Select Gender:</label>
-      <input type="radio" id="male" name="gender" value="Male">
-      <label for="male">♂ Male</label>
-      <input type="radio" id="female"
+  <div class="dog-grid">
+    <div class="dog-card">
+      <img src="pomeranian.png" alt="Pomeranian" class="dog-img">
+      <h2>Pomeranian</h2>
+      <p>Choose Gender:</p>
+      <select class="gender-select" onchange="generateTraits(this, 'pomeranian')">
+        <option value="">Select</option>
+        <option value="♀">Female</option>
+        <option value="♂">Male</option>
+      </select>
+      <div class="traits" id="traits-pomeranian"></div>
+    </div>
+
+    <div class="dog-card">
+      <img src="shiba.png" alt="Shiba Inu" class="dog-img">
+      <h2>Shiba Inu</h2>
+      <p>Choose Gender:</p>
+      <select class="gender-select" onchange="generateTraits(this, 'shiba')">
+        <option value="">Select</option>
+        <option value="♀">Female</option>
+        <option value="♂">Male</option>
+      </select>
+      <div class="traits" id="traits-shiba"></div>
+    </div>
+
+    <div class="dog-card">
+      <img src="husky.png" alt="Husky" class="dog-img">
+      <h2>Husky</h2>
+      <p>Choose Gender:</p>
+      <select class="gender-select" onchange="generateTraits(this, 'husky')">
+        <option value="">Select</option>
+        <option value="♀">Female</option>
+        <option value="♂">Male</option>
+      </select>
+      <div class="traits" id="traits-husky"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</htm
